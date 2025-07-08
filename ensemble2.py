@@ -1,9 +1,10 @@
+
 import numpy as np
 import pandas as pd
 import os
 from sklearn.model_selection import StratifiedKFold
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.neighbors import KNeighborsClassifier
+from xgboost import XGBClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
 from sklearn.preprocessing import LabelEncoder
@@ -58,8 +59,8 @@ def preprocess(df):
 # --- Initialize base models ---
 def get_base_models():
     rf = RandomForestClassifier(n_estimators=100, random_state=42)
-    knn = KNeighborsClassifier(n_neighbors=5)
-    return [('rf', rf), ('knn', knn)]
+    xgb = XGBClassifier(n_estimators=100, random_state=42, eval_metric='mlogloss')
+    return [('rf', rf), ('xgb', xgb)]
 
 # --- Evaluation Metrics ---
 def evaluate_model(y_true, y_pred, model_name):
@@ -122,4 +123,3 @@ if __name__ == '__main__':
     df = pd.read_csv('dataset.csv')  # replace with actual filename if different
     X, y = preprocess(df)
     model = stacked_cv_model(X, y)
-
