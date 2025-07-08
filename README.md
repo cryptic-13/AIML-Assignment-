@@ -1,5 +1,12 @@
-# Neural-Network-From-Scratch
-## Using Numpy, Matplotlib and Tensorflow to build a neural network from scratch on the MNIST Database. 
+# Neural-Network-From-Scratch And Ensemble Learning 
+## Using Numpy, Matplotlib and Tensorflow to build a neural network from scratch on the MNIST Database.
+## Creating an ensemble model using XGBoost and Random Forest as base models. 
+## For both projects, performance metrics used were --> Confusion Matrix, Precision, Recall, Accuracy and F1 score 
+
+
+## Instructions To Run --> 
+-- Ensure the environment you are running these files on have--> TensorFlow, Keras, Numpy, Matplotlib, Seaborn, Scikit-Learn, xgboost and Pandas.
+-- If not, 'pip-install' suitable versions to your environment, and ensure you are working in a python version between 3.9 and 3.12 as TensorFlow is not compatible with more recent versions. 
 
 Reading through this project demonstartates a thorough breakdown of how neural networks, receive, process and train on data from a dataset to predict outputs. 
 
@@ -26,4 +33,21 @@ Use the following flowchart to visualze how a neural network works in steps.
 
 ![image](https://github.com/user-attachments/assets/79867849-45e5-4433-be36-ed54f36233cc)
 
-The program makes the output more comprehendable by printing the image taken from the training dataset, displaying its true label and the model's prediction. This is a more layman and visual way of understanding how the model works rather than printing a bunch of technical perofmance metrics. 
+The program makes the output more comprehendable by printing the image taken from the training dataset, displaying its true label and the model's prediction. This is a more layman and visual way of understanding how the model works, as an added feature. 
+
+## Expected Output on running the ensemble2.py file --> 
+![image](https://github.com/user-attachments/assets/c24c4724-0dd4-48d2-8234-6cd28161f53b)
+
+## Expected Output on running the neural network file--> 
+![image](https://github.com/user-attachments/assets/61c584e6-bc6a-47a8-a850-41be86d17408)
+![image](https://github.com/user-attachments/assets/6650c19d-2460-4dfd-bc50-d5a679e17356)
+![image](https://github.com/user-attachments/assets/83a6c099-ede2-40e4-8bc1-e9a63765ba15)
+![image](https://github.com/user-attachments/assets/e00c3846-ef97-4d89-abf0-150cb9f2b20d) 
+
+
+
+
+
+
+
+
