@@ -1,7 +1,13 @@
 # Neural-Network-From-Scratch And Ensemble Learning 
-## Using Numpy, Matplotlib and Tensorflow to build a neural network from scratch on the MNIST Database.
-## Creating an ensemble model using XGBoost and Random Forest as base models. 
-## For both projects, performance metrics used were --> Confusion Matrix, Precision, Recall, Accuracy and F1 score 
+
+This repo includes two files:
+* `ensemble2.py`: uses the data in `dataset.csv` to ...
+* `neural-network.py`: creates a neural network from scratch ...
+
+## Highlights
+* Using Numpy, Matplotlib and Tensorflow to build a neural network from scratch on the MNIST Database, for number recognition on images of handwritten digits. 
+* Creating an ensemble model using XGBoost and Random Forest as base models, for multi-class classification of obesity levels on a dataset of 17 paramteres of various data types. 
+* For both projects, performance metrics used were --> Confusion Matrix, Precision, Recall, Accuracy and F1 score 
 
 
 ## Instructions To Run --> 
