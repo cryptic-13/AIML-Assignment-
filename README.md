@@ -94,11 +94,11 @@ pip install -r requirements.txt
 
 ## Expected Output
 
-### Expected Output of ensemble2.py 
+### `ensemble2.py` 
 ![image](https://github.com/user-attachments/assets/c24c4724-0dd4-48d2-8234-6cd28161f53b)
 
 
-## Expected Output of of neural-network.py
+### `neural-network.py`
 ![image](https://github.com/user-attachments/assets/61c584e6-bc6a-47a8-a850-41be86d17408)
 ![image](https://github.com/user-attachments/assets/6650c19d-2460-4dfd-bc50-d5a679e17356)
 ![image](https://github.com/user-attachments/assets/83a6c099-ede2-40e4-8bc1-e9a63765ba15)
