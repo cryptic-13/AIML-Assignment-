@@ -20,13 +20,12 @@ except FileNotFoundError:
     exit()
 
 # --- Identify Features and Target ---
-# Updated column names based on the content of dataset.csv
 feature_columns = [
     'Gender', 'Age', 'Height', 'Weight', 'family_history_with_overweight',
     'FAVC', 'FCVC', 'NCP', 'CAEC', 'SMOKE', 'CH2O', 'SCC', 'FAF', 'TUE',
     'CALC', 'MTRANS' # These are the 17 parameters as 'id' is an identifier
 ]
-target_column = 'NObeyesdad' # This is the target column name from dataset.csv
+target_column = 'NObeyesdad' 
 
 # Check if all identified columns exist in the DataFrame
 missing_columns = [col for col in feature_columns + [target_column] if col not in df.columns]
@@ -120,6 +119,6 @@ def stacked_cv_model(X, y, n_folds=5):
 
 
 if __name__ == '__main__':
-    df = pd.read_csv('dataset.csv')  # replace with actual filename if different
+    df = pd.read_csv('dataset.csv')  
     X, y = preprocess(df)
     model = stacked_cv_model(X, y)
