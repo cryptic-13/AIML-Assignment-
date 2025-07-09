@@ -1,4 +1,4 @@
-# 🧠 AIML Assignment – Neural Network & Ensemble Learning
+# AIML Assignment – Neural Network & Ensemble Learning
 
 This project contains two main components:
 
@@ -7,7 +7,7 @@ This project contains two main components:
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 
 1. [Project Overview](#project-overview)
 2. [Features](#features)
@@ -16,7 +16,7 @@ This project contains two main components:
 5. [Expected Output](#expected-output)
 ---
 
-## 📘 Project Overview
+## Project Overview
 
 This repository demonstrates:
 - A low-level implementation of a feedforward neural network with backpropagation and custom activation functions (ReLU, Softmax).
@@ -24,7 +24,7 @@ This repository demonstrates:
 
 ---
 
-## ✨ Features
+## Features
 
 ### `neural-network.py`
 - Using Numpy, Matplotlib and Tensorflow to build a neural network from scratch on the MNIST Database, for number recognition on images of handwritten digits. 
