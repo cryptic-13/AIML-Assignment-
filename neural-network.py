@@ -30,12 +30,12 @@ def database_import():
     train_labels = one_hot_encode(train_labels, 10)
     test_labels = one_hot_encode(test_labels, 10)
 
-    # Return data in correct format (samples, features) - NO TRANSPOSE
+    # Return data in correct format (samples, features) 
     return train_images, train_labels, test_images, test_labels
 
 def initialize_parameters(layer_dims):
     """Initialize weights and biases for the neural network"""
-    np.random.seed(42)  # For reproducibility
+    np.random.seed(42)  
     parameters = {}
     num_layers = len(layer_dims)
     
@@ -221,7 +221,7 @@ def predict_single_image(parameters, X_test, Y_test):
     """Predict and display a random test image"""
     # Select random image
     random_idx = np.random.randint(0, X_test.shape[0])
-    random_image = X_test[random_idx:random_idx+1]  # Keep 2D shape
+    random_image = X_test[random_idx:random_idx+1]  
     true_label = Y_test[random_idx:random_idx+1]
     
     # Make prediction
